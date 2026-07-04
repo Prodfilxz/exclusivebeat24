@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Exclusive Collab Drop</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at top, #1a1a1a, #000);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* ANIMACJA wejścia */
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* glow badge */
+.badge {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 8px 16px;
+    border-radius: 30px;
+    background: white;
+    color: black;
+    font-size: 12px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.card {
+    margin-top: 25px;
+    padding: 30px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(255,255,255,0.05);
+}
+
+h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+p {
+    opacity: 0.8;
+}
+
+audio {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 22px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.box {
+    padding: 15px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 15px;
+}
+
+.small {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+a {
+    color: white;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container fade-in">
+
+<div class="badge">🔥 LIMITED COLLAB DROP</div>
+
+<div class="card">
+
+<h1>🎵 Exclusive Beat</h1>
+<p>Stworzony specjalnie dla tej współpracy</p>
+
+<audio controls>
+  <source src="beat.mp3" type="audio/mpeg">
+</audio>
+
+<br>
+
+<a class="button" href="beat.mp3" download>⬇ Pobierz Beat</a>
+
+</div>
+
+<div class="grid fade-in">
+
+<div class="box">
+<h3>👕 Brand</h3>
+<p><b>Illegallove</b></p>
+<p class="small">TikTok: @Illegallove<br>IG: @illegal.love</p>
+</div>
+
+<div class="box">
+<h3>🎧 Producer</h3>
+<p><b>Filxz</b></p>
+<p class="small">TikTok: @prod.byfilxzz<br>IG: @prod.filxz</p>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
